@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    height: 100vh;
+    background: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Unbounded', cursive;
+    color: white;
+    text-align: center;
+}
+.title{
+    font-size: 5rem;
+    text-shadow:  1px 4px rgb(142, 39, 113), 0 0 1em rgb(231, 103, 34), 0 0 0.2em rgb(82, 0, 71);
+}
+.sub__title{
+    font-size: 3rem;
+    padding-top: 22rem;
+}
+.title__description{
+    margin: 1rem;
+}
+.title__btn{
+    border: none;
+    background-color: #601e6399;
+    padding: 1rem 2rem;
+}
+.title__link{
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: 'Unbounded', cursive;
+    text-transform: uppercase;
+}
