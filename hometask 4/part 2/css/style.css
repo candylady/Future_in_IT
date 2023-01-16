@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 98%;
+    margin: auto;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 85vh;
+    width: 70%;
+    margin: 50px auto;
+}
+.details__item{
+    border: 2px solid rgb(106, 3, 209);
+    border-radius: 10px;
+    height: 75px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+.details__item:nth-child(2){
+    height: 150px;
+}
+.details__item:nth-child(2) .details__itemInfoDescription{
+    margin-top: 10px;
+    text-align-last: left;
+}
+.details__itemInfo{
+    width: 80%;
+    margin-left: 25px;
+}
+.details__itemImg{
+    width: 5%;
+}
+.details__itemInfoDescription{
+    font-weight: 100;
+    font-size: small;
+}
+.details__itemImg:nth-child(2){
+    position: relative;
+}
+.fa-xmark{
+    position: absolute;
+    top: -55px;
+}
