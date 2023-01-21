@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: rgb(161, 161, 161);
+}
+
+.header{
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(68, 68, 68);
+}
+.nav{
+    width: 65%;
+}
+.nav ul{
+    display: flex;
+    list-style-type: none;
+}
+.nav li{
+    width: 13%;
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 18px;
+    border-right: 1px solid rgb(161, 161, 161);
+}
+a:hover {
+    color: rgb(187, 252, 39);
+}
+.fa-arrow-right{
+    font-weight: lighter ;
+}
+
+.site__info{
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.user__info{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+.user__info .fa-solid{
+    margin: 0 5px;
+}
+.fa-shoe-prints{
+    rotate: -90deg;
+}
