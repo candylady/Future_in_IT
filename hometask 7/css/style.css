@@ -1,0 +1,241 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.header{
+	background: rgba(0, 0, 0, 1);
+	color: white;
+	text-transform: uppercase;
+	display: flex;
+	height: 60px;
+	align-items: center;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 1000;
+}
+.header__logo{
+	width: 30%;
+	text-align: center;
+    font-size: 30px;
+}
+.header__logo span{
+	color: red;
+}
+.header__nav{
+	width: 70%;
+
+}
+.header__menu{
+	list-style-type: none;
+	display: flex;
+	width: 50%;
+    margin: auto;
+    justify-content: space-between;
+}
+.header__submenu{
+	position: relative;
+}
+.header__menu a{
+	text-decoration: none;
+	color: white;
+	transition: 1s;
+}
+.header__submenu ul{
+	background: rgba(0, 0, 0, 1.0);
+	display: none;
+	position: absolute;
+	left: -18px;
+	list-style: none;
+	padding: 10px 20px;
+	width: 170%;
+    top: 20px;
+}
+.header__submenu li{
+	padding: 10px 0;
+}
+.header__submenu:hover ul{
+	display: block;
+}
+.header__menu a:hover{
+	color: red;
+}
+.banner{
+	height: 100vh;
+	background: url(../img/1.jpeg);
+	position: relative;
+	background-position: center;
+}
+.banner__info{
+	width: 90%;
+	margin: auto;
+	left: 0;
+	right: 0;
+	color: white;
+	top: 200px;
+	position: absolute;
+	background: rgba(0, 0, 0, 0.5);
+	padding: 20px;
+
+}
+.banner__info>div{
+	margin: 10px 0;
+}
+.banner__title{
+	font-size: 45px;
+}
+.banner__subtitle{
+	font-size: 38px;
+}
+.banner__text{
+	font-size: 30px;
+	color: rgb(167, 163, 163);
+}
+.banner__btn{
+	background: linear-gradient(90deg, hsla(0, 100%, 50%, 1) 0%, hsla(0, 100%, 50%, .3) 87%);
+	position: absolute;
+	bottom: 200px;
+	padding: 10px 15px;
+	left: 10%;
+	border: none;
+	cursor: pointer;
+}
+.banner__btn a{
+	text-decoration: none;
+	color: white;
+	text-transform: uppercase;
+}
+.articles{
+	height: 100vh;
+	background: lightgrey;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.articles__item{
+	height: 90%;
+	width: 30%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+.articles__item:not(.noBg) {
+	background: grey;
+}
+.articles__wrapper{
+	height: 90%;
+	width: 90%;
+	position: relative;
+}
+.articles__title{
+	font-weight: 700;
+	font-size: 20px;
+	margin: 15px 0;
+}
+.articles__text{
+	font-size: 14px;
+}
+.articles_img{
+	height: 350px;
+	position: relative;
+}
+.articles__item:nth-child(1) .articles_img{
+	background: url(../img/2.jpeg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.articles__item:nth-child(2) .articles_img{
+	background: url(../img/3.jpeg);
+	background-size: 100% 120%;
+	background-repeat: no-repeat;
+}
+.articles__item:nth-child(3) .articles_img{
+	background: url(../img/4.jpeg);
+	background-size: 100% 105%;
+	background-repeat: no-repeat;
+}
+.articles__btn{
+	position: absolute;
+	bottom: 0;
+	border: none;
+	padding: 10px 15px;
+	cursor: pointer;
+	background: linear-gradient(90deg, hsla(0, 100%, 50%, 1) 0%, hsla(0, 0%, 50%, .5) 87%);}
+
+.articles__btn a{
+	text-decoration: none;
+	color: white;
+}
+.fa-circle-info{
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	cursor: pointer;
+	color: white;
+}
+.more__info{
+	width: 200px;
+	height: 50px;
+	position: absolute;
+	right: -17px;
+	top: 35px;
+	background-color: rgba(255, 255, 255, 0.85);
+	z-index: 5;
+	border-radius: 15px;
+	padding: 10px;
+	text-align: justify;
+	display: none;
+	font-size: 12px;
+}
+.more__info .triangle{
+	position: absolute;
+	border-top: 10px solid transparent;
+	border-right: 8px solid transparent;
+	border-left: 8px solid transparent;
+	border-bottom: 8px solid white;
+	top: -18px;
+	right: 27px;
+	
+}
+.fa-circle-info:hover+.more__info{
+	display: block;
+}
+
+
+.footer {
+	background: rgba(0, 0, 0, 1);
+	color: white;
+	text-transform: uppercase;
+	display: flex;
+	height: 60px;
+	align-items: center;
+	width: 100%;
+	justify-content: space-between;
+}
+
+.footer__logo {
+	width: 30%;
+	text-align: center;
+	font-size: 30px;
+}
+
+.footer__logo span {
+	color: red;
+}
+.footer__links{
+	margin-right: 15%;
+}
+a{
+	text-decoration: none;
+}
+.footer__links .fa-brands{
+	margin: 0 5px;
+	font-size: 20px;
+	color: white;
+	transition: 1s;
+}
+.footer__links .fa-brands:hover {
+	color: red;
+}
