@@ -1,0 +1,150 @@
+<!--     1. Среди трех чисел найти среднее арифметическое. Если среди чисел есть равные, вывести сообщение "Ошибка". Числа принять от пользователя.
+
+    2. Построить прямоугольный треугольник состоящий из символа "*".
+
+    3. Определить какое из трех, введенных пользователем, чисел максимальное и вывести его на экран.
+
+    4. Дано два числа A и B где (A<B). 
+    Выведите на экран суму всех чисел расположенных в числовом промежутке от А до В. 
+    Выведите на экран все нечетные значения, расположенные в числовом промежутке от А до В. 
+
+
+    5. Вывести на экран ряд чисел Фибоначчи, состоящий из n элементов (n принять от пользователя).
+       Числа Фибоначчи – это элементы числовой последовательности, в которой каждое последующее число равно сумме двух предыдущих.
+
+    6. Вывести на экран таблицу умножения от 1 до 10.    -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+      .table{
+         border-collapse: collapse;
+         color: rgb(31, 30, 30);
+         background-color: rgb(212, 212, 211);
+      }
+      td {
+         padding: 5px;;
+      }
+   </style>
+</head>
+<body>
+   <script type="text/javascript">
+
+      //Task 1
+
+
+      // var num1 = +prompt ("Please enter FIRST number");
+      // var num2 = +prompt("Please enter SECOND number");
+      // var num3 = +prompt("Please enter THIRD number");
+
+      // if (num1 == num2 || num2 == num3 || num3 == num1){
+      //    alert("The operation failed. Please choose different numbers")
+      // }else{
+      //    var average = (num1 + num2 + num3) / 3;
+      //    alert (`Average number of ${num1}, ${num2} and ${num3} is ${average}!`)
+      // }
+
+
+      //Task 2. First version
+
+
+      // for (let i = 0; i < 6; i++){
+      //    for (let j = 0; j < i; j++){
+      //       document.write('* ');
+      //    }
+      //    document.write('<br>');
+      // }
+      
+      //Task 2. Second version
+
+
+      // var star = '';
+
+      // for (let i = 0; i < 6; i++) {
+      //    star += '* ';
+      //    document.write(`${star}<br>`);
+      // }
+
+
+      //Task 3
+
+      // var num1 = +prompt("Please enter FIRST number");
+      // var num2 = +prompt("Please enter SECOND number");
+      // var num3 = +prompt("Please enter THIRD number");
+
+      // var max;
+
+      // if (num1 > num2 && num1 > num3){
+      //    max = num1;
+      //    document.write(`The max number from ${num1}, ${num2} and ${num3} is: ${max}`);
+      // }
+      // else if (num2 >num1 && num2 > num3){
+      //    max = num2;
+      //    document.write(`The max number from ${num1}, ${num2} and ${num3} is: ${max}`);
+      // }
+      // else if (num3 > num1 && num3 > num2){
+      //    max = num3;
+      //    document.write(`The max number from ${num1}, ${num2} and ${num3} is: ${max}`);
+      // }else if (num1 == num2 && num2 == num3 && num3 == num1){
+      //    document.write(`The numbers are the same. Cannot find a max one!`);
+      // }else if (typeof(num1) != Number || typeof(num2) != Number || typeof(num3) != Number ){
+      //    document.write('This is not a number');
+      // }
+
+
+      //Task 4
+
+      // var a = 3;
+      // var b = 19;
+      // var sum = 0;
+
+      // for (let i = a + 1; i < b; i++){
+      //    sum += i;
+      // }
+
+      // for (let j = a + 1; j < b; j++) {
+      //    if (j % 2 == 1){
+      //       document.write(`${j}<br>`);
+      //    }
+      // }
+      // document.write(`Sum between ${a} and ${b} = ${sum}`);
+
+
+      //Task 5
+
+      // let count = +prompt ("Please enter a number");
+      // let num1 = 0;
+      // let num2 = 1;
+      // let fibo = "0 1";
+      // let num3;
+
+
+      // for (let i = 0; i < count - 2; i++){
+      //    num3 = num1 + num2;
+      //    fibo += " " + num3;
+      //    num1 = num2;
+      //    num2 = num3;
+      // }
+      // document.write(fibo);
+
+      //Task 6
+
+      let result;
+      document.write('<table border class="table">');
+      for (let i = 1; i <= 10; i++){
+         document.write('<tr>');
+         for (let j = 1; j <= 10; j++){
+            result = j * i;
+            document.write (`<td> ${j} * ${i} = ${result} </td>`);
+         }
+         document.write('</tr>');
+      }
+      document.write('</table>');
+      
+   </script>
+</body>
+</html>
